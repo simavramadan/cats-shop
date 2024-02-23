@@ -1,0 +1,215 @@
+/*select all elements*/
+*{
+padding: 0;
+margin: 0;
+}
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden; /* clipped the overflow and the rest will be invisible*/
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+}
+.nav{
+    width: 100%;
+    height: 45px;
+    padding: 15px;
+    box-shadow: 10px 10px 8px #888888; /*attaches one or more shadow to an element */
+    display: flex; /* flex container */
+    justify-content: space-between; /* items will have space between them*/
+    align-items: center; /* items will positioned at the center of container*/
+}
+.links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px; /*sets the right margin to an element*/
+}
+.links h2, .title h1{
+    margin: 0 10px; /*top and bottom margins are 0 left and right margin are 10px */
+    padding: 15px;
+    cursor: pointer; /* the cursor is a pointer and indicates a link*/
+    letter-spacing: 5px; /*increases or decreases the space between characters in a text */
+}
+.links h2:hover{
+    background-color: #ccc;
+}
+.img-header{
+    width: 100%;
+    height: 60vh; /*60% of the viewport*/
+    background: url('./bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; /* do not reapeat the image */
+    display: flex; 
+    justify-self: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-right: 0%;
+}
+h1,h2,h3 {
+    font-weight: 500 !important; 
+}
+
+.img-header h1{
+    font-size: 60px;
+    width: 100%;
+    text-align: center;
+    color:#ccc;
+}
+.img-header h1 b{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 15px;
+}
+.parent{
+    padding: 50px;
+}
+/* 3 */
+.cards, .about, .employyes, .form{
+    padding: 25px;
+    margin-top: 40px;
+}
+.about{
+    margin-top: 20px !important;
+}
+hr{
+    margin: 20px 0;
+    background-color: #ccc;
+    opacity: 0.4;
+}
+.first-cards-set, .second-cards-set{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.second-cards-set{
+    margin-top: 40px;
+}
+.first-cards-set div:nth-child(1){
+    background: url(./shirazi.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-cards-set div:nth-child(2){
+    background: url(./himalaya.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.first-cards-set div span , .second-cards-set div span {
+    padding: 20px;
+    background-color: black;
+    color: white;
+    position: absolute;
+}
+.second-cards-set div:nth-child(1){
+    background: url(./egypt.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.second-cards-set div:nth-child(2){
+    background: url(./french.jpg);
+    width: 48%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#about-text{
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* 5*/
+
+.employyes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.employyes .emp{
+    width: 48%;
+    margin-bottom: 20px;
+}
+.employyes .emp h3, .employyes .emp span, .employyes .emp p{
+    margin: 10px 0;
+}
+.employyes .emp h3{
+    font-size: 30px;
+}
+.employyes .emp span{
+    color: #777;
+    font-weight: bold;
+}
+.employyes .emp p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.employyes .emp button{
+    padding: 20px;
+    width: 100%;
+    font-size: 30px;
+    border: none;
+    background-color: #eee;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.employyes .emp button:hover{
+    background-color: #ccc;
+}
+.employyes .emp img{
+    width: 100%;
+    filter: brightness(0.5)
+}
+/* 6 */
+.inputs-area{
+    margin-top: 20px;
+}
+.inputs-area div{
+    width: 100%;
+}
+.inputs-area div input{
+    width: 100%;
+    padding: 20px 0;
+    margin: 10px 0;
+    text-indent: 10px; /* start of the text */
+}
+.form button{
+    width: max-content;
+    padding: 20px;
+    font-size: 25px;
+    background-color: darkslategray;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    border: 0;
+}
+
+.form button:hover{
+    background-color: dimgray;
+    color: black;
+}
+/*6*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color:#888888;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    color: white;
+}
+footer h3{
+    width: 100%;
+    text-align: center;
+}
+footer h3 a{
+    text-decoration: none;
+    color: black;
+}
